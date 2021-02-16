@@ -1,0 +1,45 @@
+nav {
+    min-height:100px;
+    background-color:purple;
+    color:white;
+    text-decoration:none;
+    position:relative;
+
+}
+nav h1{
+    float:left;
+}
+nav a{
+    float:right;
+    margin:5px;
+    text-decoration: none;
+    color:white;
+    padding: 5px 10px;
+    background-color:blueviolet;
+}
+
+.container {
+    width:100%;
+    position:relative;
+}
+.balContent {
+    width:50%;
+    float:left;
+}
+.jobbContent {
+    width:50%;
+    float:right;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+input, select {
+    width:80%;
+    padding: 5px;
+}
