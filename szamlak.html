@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices Pro Ltd. | Számlák</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Invoices Pro Ltd.</h1>
+        <div class="jobbMenu">
+            <a href="./index.html">Kezdolap</a>
+            <a href="./szamlak.html">Szamla</a>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:20px; background-color:bisque;">
+        <div class="balContent">
+            <form id="szamla-form">
+                <label for="nev">Számlanév:</label><br>
+                <input type="text" id="nev" /><br>
+                <label for="nevertek">Névértéke:</label><br>
+                <input type="number" id="nevertek" /><br>
+                <label for="penznem">Pénznem:</label><br>
+                <select id="penznem" name="penznem">
+                    <option value="HUF">HUF</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>    
+                </select><br>
+                <label for="statusz">Státusz:</label><br>
+                <select id="statusz" name="statusz">
+                    <option value="Teljesített">Teljesített</option>
+                    <option value="Nem teljesített">Nem teljesített</option>
+                       
+                </select><br>
+                <input type="submit" value="Submit" style="margin-top:15px;" >
+                <input type="reset" value="Reset" >
+            </form>
+        </div>
+        <div class="jobbContent">
+            <table style="width:100%">
+              <thead>
+                <tr>
+                
+                <th>Számla név:</th>
+                <th>Névértéke:</th>
+                <th>Pénznem:</th>
+                <th>Státusz</th>
+            </tr>
+        </thead>
+        <tbody id="szamla-list">
+            <div></div>
+        </tbody>
+          
+            </table>
+        </div>
+    </div>
+    <script src="magic.js"></script>
+</body>
+</html>
